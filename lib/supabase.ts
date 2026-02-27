@@ -1,11 +1,7 @@
-const { createServerComponentClient } = require('@supabase/auth-helpers-nextjs')
-const { cookies } = require('next/headers')
+import { createClient } from '@supabase/supabase-js'
 
-// Placeholder for Supabase client
-export function createClient() {
-  const cookieStore = cookies()
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? ''
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? ''
 
-  return createServerComponentClient({
-    cookies: () =&gt; cookieStore,
-  })
-}
+// Browser / client-side Supabase singleton
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
