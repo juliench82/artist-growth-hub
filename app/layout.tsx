@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Artist Growth Hub',
@@ -7,12 +8,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
-    &lt;html lang=&quot;en&quot;&gt;
-      &lt;body&gt;{children}&lt;/body&gt;
-    &lt;/html&gt;
+    <html lang="en">
+      <body>{children}</body>
+    </html>
   )
 }
