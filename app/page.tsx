@@ -1,15 +1,15 @@
 export default function Home() {
   return (
-    &lt;main className=&quot;flex min-h-screen flex-col items-center justify-center p-24&quot;&gt;
-      &lt;h1 className=&quot;text-6xl font-bold&quot;&gt;
+    <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <h1 className="text-6xl font-bold text-white">
         Artist Growth Hub
-      &lt;/h1&gt;
-      &lt;p className=&quot;mt-3 text-2xl&quot;&gt;
-        Analytics • Promotion • Tours • Smart Links
-      &lt;/p&gt;
-      &lt;p className=&quot;mt-8 text-xl&quot;&gt;
-        Coming soon... (Supabase + Chartmetric integration next)
-      &lt;/p&gt;
-    &lt;/main&gt;
+      </h1>
+      <p className="mt-3 text-2xl text-purple-400">
+        Analytics &bull; Promotion &bull; Tours &bull; Smart Links
+      </p>
+      <p className="mt-8 text-xl text-gray-500">
+        Coming soon &mdash; Supabase + Chartmetric integration next
+      </p>
+    </main>
   )
 }
